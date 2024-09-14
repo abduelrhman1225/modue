@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The web services platform is a platform that allows you to design your website at a nominal price and high quality ">
+    <meta property="og:title" content="Web services platform for designing your website ">
+    <link rel="icon" href="./5540726.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Mahmoud Samy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="titleheader">Mahmoud Samy</h1>
+        <a class="linkid" href="#services">Services</a>
+        <a class="linkid" href="#projects">projects</a>
+        <a class="linkid" href="#contact">Contact</a>
+    </div>
+
+    <div class="mine">
+        <div class="cont2"> 
+            <div class="c">
+                <p class="name">Hello, I'm Mahmoud Samy</p>
+                <h1 class="title">Designer&writer</h1>
+                <h2 class="ds"> I design websites and logos</h2>
+                <button>
+                    <a href="#projects" class="vi">View my work</a>
+                </button>
+            </div>
+        </div>
+        <div class="re"></div>
+    </div>
+
+    <section class="cards" id="services">
+        <h2 class="title5">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <div class="info">
+                    <h3>Professional Logo Design</h3>
+                    <p>Create a unique and impactful logo that reflects your brand identity,<br></p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Professional Book Writing</h3>
+                        <p>Crafting exceptional books that combine valuable content with clear writing</p>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Creative Novel Writing</h3>
+                        <p>Craft unique novels that combine captivating plots with an engaging literary style</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+    <section class="projects" id="projects">
+        <br><br>
+        <h2 class="title5">projects</h2>
+        <br><br>
+        <div class="content">
+            <div class="card2" align="center">
+                <embed src="./a857c43a-3947-4f6d-8901-52c289d83427.jpg" type="">
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+    </section>
+    <br><br><br><br><br><br>
+    <section class="cards contact" id="contact">
+        <h2 class="title5">Let's work together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+201094361250</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                </div>
+                <div class="info">
+                    <h3>facebook</h3>
+                    <p><a target="blank" href="https://www.facebook.com/profile.php?id=61559424082875" class="aa">Mahmoud Samy</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br>
+    <footer class="footer">
+        <p class="footer-title">Copyrights <a href="./New folder/index .html"> @</a> <span>Mahmoud Samy</span></p>
+    </footer>
+
+    
+    <script>
+         // عند الدخول للصفحة، إرسال طلب لزيادة عدد المشاهدات
+         document.addEventListener('DOMContentLoaded', function() {
+            fetch('http://localhost:3000/views', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => console.log('View count updated:', data));
+        });
+    </script>
+
+</body>
+</html>
